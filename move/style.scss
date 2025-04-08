@@ -1,0 +1,151 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #efefef;
+    font-family: Arial;
+    *{
+        box-sizing: border-box;
+    }
+    #loading{
+        position: fixed;
+        background-color: rgba(1,1,1,0.1);
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        display: none;
+        .loader {
+            border: 4px solid #d09efd;
+            border-radius: 50%;
+            border-top: 4px solid #7740a9;
+            width: 34px;
+            height: 34px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+    }
+    #wrapper{
+        width: 100%;
+        max-width: 450px;
+        box-shadow: rgba(1,1,1,0.5) 1px 1px 5px;
+        height: 100vh;
+        background-color: #ffffff;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        .header{
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .title{
+                background-color: #5a2d82;
+                margin: 0;
+                color: #ffffff;
+                padding: 5px 20px;
+                font-size: 24px;
+                width: 100%;
+            }
+            textarea{
+                width: calc(100% - 20px);
+                height: 60px;
+                resize: none;
+                margin: 10px;
+                border-radius: 5px;
+                border: #c1c1c1 1px solid;
+                outline: none;
+                padding: 10px;
+            }
+            button{
+                width: 50%;
+                height: 30px;
+                border: none;
+                background-color: #5a2d82;
+                color: #ffffff;
+                font-size: 16px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #9c51de;
+                }
+            }
+        }
+        .container{
+            overflow: auto;
+            height: 100%;
+            min-height: 0;
+            width: 100%;
+            padding: 20px 10px;
+            #results{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                gap: 10px;
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: #efefef;
+                    width: 100%;
+                    border-radius: 5px;
+                    gap: 5px;
+                    padding: 5px 10px;
+                    .icon{
+                        background: url("kj.png") no-repeat center center;
+                        flex-shrink: 0;
+                        width: 50px;
+                        height: 50px;
+                        background-size: 100%;
+                    }
+                    .move-btn{
+                        flex-shrink: 0;
+                        height: 40px;
+                        border: #5a2d82 1px solid;
+                        border-radius: 5px;
+                        line-height: 40px;
+                        text-decoration: none;
+                        color: #5a2d82;
+                        padding: 0px 10px;
+                        &:hover{
+                            background-color: #5a2d82;
+                            color: #ffffff;
+                        }
+                    }
+                    .details{
+                        width: 100%;
+                        min-width: 0;
+                        p{
+                            margin: 0;
+                            padding: 5px;
+                            font-size: 0.8rem;
+                            color: #666;
+                            &.ammount{
+                                color: green;
+                                font-weight: bold;
+                                font-size: 1.0rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
